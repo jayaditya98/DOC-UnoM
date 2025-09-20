@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dept. of Commerce - University of Madras</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Import custom fonts */
+      @import url('https://db.onlinewebfonts.com/c/d4ba4d5d26dac5a1f7e5c2c650c8fb5c?family=BlackChancery');
+      @import url('https://db.onlinewebfonts.com/c/85e1e7f6727c0547211a6f455e746f8c?family=nevis+Bold');
+
+      /* Apply new default font to the entire site */
+      body {
+        font-family: 'nevis Bold', sans-serif;
+      }
+
+      /* Ensure all headings use the new default font explicitly */
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'nevis Bold', sans-serif;
+      }
+
+      /* A custom class for applying the BlackChancery font where needed.
+         Renamed from .font-serif to avoid conflicting with Tailwind's class. */
+      .font-black-chancery {
+        font-family: 'BlackChancery', 'Times New Roman', serif;
+      }
+
+      /* For custom scrollbar aesthetics */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #4a3f35;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #856d5a;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #a18067;
+      }
+
+      /* Global fade-in animation for page content */
+      @keyframes fade-in {
+        from { opacity: 0; transform: translateY(15px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fade-in {
+        animation: fade-in 0.7s ease-out forwards;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.1"
+  }
+}
+</script>
+</head>
+  <body class="bg-[#4a3f35] bg-[url('https://www.transparenttextures.com/patterns/brick-wall.png')]">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
